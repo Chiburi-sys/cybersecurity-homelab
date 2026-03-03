@@ -1,12 +1,36 @@
-# Attack Simulation Lab
+# SQL Injection — DVWA — Future Work
 
-This folder contains offensive security exercises performed in a controlled home lab environment using Kali Linux. These simulations generate telemetry for SIEM ingestion and incident response practice.
+**Status:** Planned  
+**MITRE ATT&CK:** T1190 — Exploit Public-Facing Application
 
-## Contents
-- brute_force_ssh.md — Hydra SSH brute force attack
-- malware_execution.md — Payload execution and behavioral observation
-- sql_injection_dvwa.md — SQL injection attack against DVWA
-- screenshots/ — Terminal outputs and attack visuals
+---
 
-## Goal
-Produce realistic attack data to support detection engineering, log analysis, and incident response workflows.
+## Planned Scope
+
+Perform SQL injection attacks against DVWA (Damn Vulnerable Web Application) at varying security levels to demonstrate web application penetration testing skills.
+
+### Attack Scenarios
+
+| Level | Technique | Goal |
+|-------|-----------|------|
+| Low | Basic `' OR 1=1 --` | Extract all users |
+| Medium | Numeric injection | Bypass input filtering |
+| High | Blind SQL injection | Enumerate via boolean responses |
+
+### Tools
+
+- **Burp Suite** — Intercept and modify HTTP requests
+- **sqlmap** — Automated SQL injection testing
+- **Browser DevTools** — Manual parameter manipulation
+
+### Detection
+
+```spl
+index=main sourcetype=access_combined
+| regex _raw="(?i)(union|select|from|where|drop|insert|update|delete|--|;)"
+| table _time, clientip, uri_path, status
+```
+
+---
+
+*This document is part of a cybersecurity home lab portfolio for SOC analyst skill development.*
