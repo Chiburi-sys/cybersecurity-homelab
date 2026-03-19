@@ -1,0 +1,95 @@
+<!-- Local rules -->
+<!-- Custom rules for Linux shutdown/crash detection -->
+<!-- Copyright (C) 2015, Wazuh Inc. -->
+
+<group name="local,syslog,sshd,">
+
+  <!--
+  Dec 10 01:02:02 host sshd[1234]: Failed none for root from 1.1.1.1 port 1066 ssh2
+  -->
+  <rule id="100001" level="5">
+    <if_sid>5716</if_sid>
+    <srcip>1.1.1.1</srcip>
+    <description>sshd: authentication failed from IP 1.1.1.1.</description>
+    <group>authentication_failed,pci_dss_10.2.4,pci_dss_10.2.5,</group>
+  </rule>
+
+</group>
+
+<!-- Linux Unexpected Shutdown and Crash Detection -->
+<group name="local,system_shutdown,">
+
+  <!-- Kernel Panic Detected -->
+  <rule id="100010" level="12">
+    <decoded_as>syslog</decoded_as>
+    <match>Kernel panic</match>
+    <description>CRITICAL: Kernel panic detected. System crash occurred.</description>
+    <mitre>
+      <id>T1499</id>
+    </mitre>
+    <group>system_shutdown,kernel,</group>
+  </rule>
+
+  <!-- System Shutdown or Reboot Initiated -->
+  <rule id="100011" level="3">
+    <decoded_as>syslog</decoded_as>
+    <match>System is rebooting|systemd-shutdown|Shutting down</match>
+    <description>System shutdown or reboot initiated.</description>
+    <group>system_shutdown,</group>
+  </rule>
+
+  <!-- Hardware Watchdog Reset -->
+  <rule id="100012" level="10">
+    <decoded_as>syslog</decoded_as>
+    <match>watchdog: watchdog did not stop|Hardware Watchdog</match>
+    <description>WARNING: Hardware watchdog triggered. System was unresponsive and force-rebooted.</description>
+    <mitre>
+      <id>T1499</id>
+    </mitre>
+    <group>system_shutdown,hardware,</group>
+  </rule>
+
+  <!-- Dirty Filesystem Detected (unclean shutdown) -->
+  <rule id="100013" level="8">
+    <decoded_as>syslog</decoded_as>
+    <match>EXT4-fs error|recovering journal|mounted filesystem with errors|UNEXPECTED INCONSISTENCY</match>
+    <description>WARNING: Filesystem inconsistency detected. Possible unclean shutdown or power loss.</description>
+    <group>system_shutdown,filesystem,</group>
+  </rule>
+
+  <!-- OOM Killer Activated -->
+  <rule id="100014" level="10">
+    <decoded_as>syslog</decoded_as>
+    <match>Out of memory: Killed process|oom-kill|invoked oom-killer</match>
+    <description>WARNING: OOM Killer activated. System ran out of memory and killed a process.</description>
+    <mitre>
+      <id>T1499.001</id>
+    </mitre>
+    <group>system_shutdown,memory,</group>
+  </rule>
+
+  <!-- Machine Check Exception (hardware failure) -->
+  <rule id="100015" level="12">
+    <decoded_as>syslog</decoded_as>
+    <match>Machine check events logged|Hardware Error</match>
+    <description>CRITICAL: Machine Check Exception (MCE). Hardware failure detected (CPU/RAM/Bus error).</description>
+    <group>system_shutdown,hardware,</group>
+  </rule>
+
+  <!-- Thermal Shutdown (CPU overheating) -->
+  <rule id="100016" level="10">
+    <decoded_as>syslog</decoded_as>
+    <match>CPU temperature above threshold|critical temperature reached|thermal shutdown</match>
+    <description>WARNING: CPU thermal threshold exceeded. System may shut down to prevent hardware damage.</description>
+    <group>system_shutdown,thermal,</group>
+  </rule>
+
+  <!-- Power Supply Failure -->
+  <rule id="100017" level="8">
+    <decoded_as>syslog</decoded_as>
+    <match>power supply|power failure|battery low</match>
+    <description>Power supply event detected. Possible power loss.</description>
+    <group>system_shutdown,power,</group>
+  </rule>
+
+</group>
