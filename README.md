@@ -11,8 +11,8 @@ Welcome to my cybersecurity home lab portfolio. This repository showcases hands-
 - **Network:** Internal (LabNet, 192.168.50.0/24)  
 - **Domain:** cybersec.local  
 - **Domain Controller:** Windows Server 2022 (DC01)  
-- **SIEM:** Splunk Enterprise on Ubuntu Server  
-- **Telemetry:** Sysmon + Splunk Universal Forwarder  
+- **SIEM Pipeline 1 (Splunk):** Splunk Enterprise (Ubuntu Server) + Sysmon + Universal Forwarder  
+- **SIEM Pipeline 2 (Wazuh):** Wazuh Manager/Indexer/Dashboard (Docker) + Wazuh Agent  
 - **Attack Simulation:** Kali Linux
 
 ---
@@ -27,6 +27,7 @@ Welcome to my cybersecurity home lab portfolio. This repository showcases hands-
 | `Lab_Network/` | Network diagram, IP map, topology |
 | `Screenshots/` | Visual evidence organized by OS/tool |
 | `Scripts/` | Python and PowerShell tools |
+| `SOC_Analyst/` | Tier 1 SOC simulation — triage, tickets, escalation |
 | `Splunk_SIEM/` | SIEM setup, SPL queries, detection rules, forwarder config |
 | `Web_App_Pentesting/` | DVWA, Juice Shop findings |
 | `Resume/` | Cybersecurity certificate |
@@ -51,6 +52,7 @@ Welcome to my cybersecurity home lab portfolio. This repository showcases hands-
                     ┌──────────────────────────┐
                     │    VirtualBox Host        │
                     │    Garuda Linux (KDE)     │
+                    │    + Docker (Wazuh)       │
                     └────────────┬─────────────┘
                                  │
                       Internal Network: LabNet
@@ -74,6 +76,7 @@ Welcome to my cybersecurity home lab portfolio. This repository showcases hands-
 - [`kerberoasting.md`](Active_Directory/kerberoasting.md) — Kerberoasting attack & detection  
 - [`ad_attacks.md`](Attack_Simulation/ad_attacks.md) — All AD attack simulations  
 - [`spl_queries.md`](Splunk_SIEM/spl_queries.md) — Splunk detection queries  
+- [`wazuh_setup.md`](Splunk_SIEM/wazuh_setup.md) — Wazuh Docker deployment guide  
 - [`001_brute_force_smb.md`](Incident_Reports/001_brute_force_smb.md) — SMB brute force incident  
 - [`002_ad_password_spray.md`](Incident_Reports/002_ad_password_spray.md) — AD password spray incident
 
