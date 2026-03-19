@@ -19,10 +19,16 @@
 - `Ubuntu_Server_checking_static_ip.png` — Verifying static IP assignment
 
 ## Structure
-- kali_linux/ — Offensive security tasks and terminal outputs
-- ubuntu_server/ — Server configuration and Splunk installation steps
-- win11/ — Windows configuration, Sysmon setup, and network settings
+
+- GitHub/ — Screenshots showing the repository structure and portfolio
+- Kali_Linux/ — Offensive security tasks and terminal outputs
+- Splunk/ — Splunk SIEM queries, dashboards, and alerts
+- Ubuntu_Server/ — Server configuration and Splunk installation steps
+- Wazuh/ — Wazuh SIEM dashboard and docker deployment
+- Win11/ — Windows configuration, Sysmon setup, and network settings
+- Win_Server22/ — Domain controller setup, AD configuration, and Active Directory features
 - virtualbox.png — VirtualBox environment reference
 
 ## Goal
+
 Provide visual evidence of lab work, configurations, and attack simulations.
