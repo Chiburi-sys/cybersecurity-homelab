@@ -28,7 +28,7 @@ Welcome to my cybersecurity home lab portfolio. This repository showcases hands-
 | `Screenshots/` | Visual evidence organized by OS/tool |
 | `Scripts/` | Python and PowerShell tools |
 | `SOC_Analyst/` | Tier 1 SOC simulation — triage, tickets, escalation |
-| `Splunk_SIEM/` | SIEM setup, SPL queries, detection rules, forwarder config |
+| `Splunk_SIEM/` | Splunk & Wazuh SIEM setup, detection rules, and log ingestion |
 | `Web_App_Pentesting/` | DVWA, Juice Shop findings |
 | `Resume/` | Cybersecurity certificate |
 
@@ -36,12 +36,12 @@ Welcome to my cybersecurity home lab portfolio. This repository showcases hands-
 
 ## 🎯 Skills Demonstrated
 
-- **SIEM Deployment** — Splunk Enterprise installation, configuration, and log ingestion  
+- **SIEM Deployment** — Splunk Enterprise & Wazuh Manager (Docker) installation and configuration  
 - **Active Directory** — Domain controller setup, user/group management, GPO basics  
-- **Detection Engineering** — Custom SPL queries, real-time alerts, SOC dashboards  
+- **Detection Engineering** — Custom SPL queries (Splunk) and XML rules (Wazuh)  
 - **Attack Simulation** — Kerberoasting, password spraying, nmap, SMB brute force  
 - **Incident Response** — SOC-style reports, playbooks, MITRE ATT&CK mapping  
-- **Network Architecture** — 4-VM isolated lab with static IPs and forwarder topology  
+- **Network Architecture** — 4-VM isolated lab + Dockerized SIEM with static IP topology  
 - **Documentation** — Professional markdown docs with screenshots for GitHub
 
 ---
