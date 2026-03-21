@@ -103,6 +103,8 @@ docker compose ps
 | wazuh.indexer | wazuh/wazuh-indexer:4.14.3 | 9200 |
 | wazuh.dashboard | wazuh/wazuh-dashboard:4.14.3 | 443→5601 |
 
+![Wazuh Docker Deployment Status](file:///home/stacy/Cyber Security Portfolio/Screenshots/Wazuh/Wazuh_docker_deployment.png)
+
 ---
 
 ## 3. Agent Installation (Garuda/Arch Linux)
@@ -196,7 +198,10 @@ Power On → systemd starts → Docker daemon starts
 | 2 | **Login** | `admin` / `SecretPassword` | ✅ Done |
 | 3 | **Verify Agent** | Dashboard → Agents → Confirm "stacy-systemproductname" shows Active (green) | ✅ Done |
 | 4 | **Check Alerts** | Dashboard → Security Events → Confirm events flowing (191 captured) | ✅ Done |
-| 5 | **Change Default Password** | See Section 6 below | ⬜ Pending |
+
+![Wazuh Dashboard with Active Agent](file:///home/stacy/Cyber Security Portfolio/Screenshots/Wazuh/Wazuh_dashboard_active_agent.png)
+
+### 5. Change Default Password
 | 6 | **Enable Dark Mode** | Dashboard → ☰ Menu → Management → Dashboard Settings → Appearance → Dark Mode | ⬜ Pending |
 
 ### 🔧 Hardening (Do This Week)
