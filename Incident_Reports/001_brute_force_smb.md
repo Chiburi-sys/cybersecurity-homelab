@@ -77,6 +77,9 @@ index=main EventCode=4625
 | timechart span=1m count
 ```
 This query displays a sharp spike at the exact minute the attack occurred, contrasting with zero baseline activity — a textbook brute force signature.
+
+![Splunk Brute Force Timeline](file:///home/stacy/Cyber Security Portfolio/Screenshots/Splunk/Splunk_failed_logins_timechart.png)
+
 ---
 ## 6. Detection & Alerting
 | Alert Name                          | Type      | Trigger                          | Status    |
@@ -111,5 +114,10 @@ This query displays a sharp spike at the exact minute the attack occurred, contr
 - CrackMapExec terminal output showing `STATUS_LOGON_FAILURE`
 - Nmap scan confirming port 445 open
 - SOC Analyst Overview dashboard with populated panels
+
+![Splunk SOC Dashboard Overview](file:///home/stacy/Cyber Security Portfolio/Screenshots/Splunk/Splunk_SOC_dashboard_with_data.png)
+
+![Failed Logins Event Log Table](file:///home/stacy/Cyber Security Portfolio/Screenshots/Splunk/Splunk_failed_logins_4625_table.png)
+
 ---
 *This incident report was created as part of a cybersecurity home lab portfolio exercise. All attacks were performed in an isolated virtual environment for educational purposes only.*

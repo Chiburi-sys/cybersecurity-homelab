@@ -235,6 +235,10 @@ bloodhound-python -u j.smith -p 'Password123!' -d cybersec.local -ns 192.168.50.
 
 > **Note:** Windows 11 Home edition cannot join an Active Directory domain. AD attack simulations are performed directly from Kali Linux against the Domain Controller instead.
 
+### Proof of Work: Finalized AD Structure
+
+![DC01 Active Directory Users and Computers](file:///home/stacy/Cyber Security Portfolio/Screenshots/Win_Server22/DC01_AD_users_IT_OU.png)
+
 ---
 
 ## 📸 Screenshots

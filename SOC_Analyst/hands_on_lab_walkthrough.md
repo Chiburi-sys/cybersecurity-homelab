@@ -38,6 +38,8 @@ ping -c 3 192.168.50.20   # Win11
 
 📸 **Screenshot: Splunk showing hosts and event counts**
 
+![Splunk Log Sources Verified](file:///home/stacy/Cyber Security Portfolio/Screenshots/Splunk/Splunk_DC01_log_sources_verified.png)
+
 > If DC01 doesn't show up, go to DC01 → open Services → find "SplunkForwarder" → make sure it's **Running**. If it's stopped, right-click → Start.
 
 ---
@@ -78,6 +80,8 @@ crackmapexec smb 192.168.50.5 -u 's.admin' -p 'Password123!' -d cybersec.local
 
 📸 **Screenshot: Kali terminal showing all 5 CrackMapExec results (1 green SUCCESS, 4 red FAILED)**
 
+![Kali Password Spray Success](file:///home/stacy/Cyber Security Portfolio/Screenshots/Kali_Linux/AD_Attacks/Kali_password_spray_AD_success.png)
+
 Save as: `Screenshots/Kali_Linux/AD_Attacks/Kali_password_spray_live.png`
 
 ---
@@ -109,6 +113,8 @@ index=main (EventCode=4625 OR EventCode=4624) Source_Network_Address="192.168.50
 
 📸 **Screenshot: Splunk showing FAILED/SUCCESS timeline — this proves you can correlate attacks**
 
+![Splunk Attack Timeline](file:///home/stacy/Cyber Security Portfolio/Screenshots/Splunk/Splunk_attack_timeline_fail_to_success.png)
+
 Save as: `Screenshots/Splunk/Splunk_password_spray_timeline.png`
 
 **Query 3 — Count by account:**
@@ -120,6 +126,8 @@ index=main EventCode=4625 Source_Network_Address="192.168.50.30" earliest=-15m
 ```
 
 📸 **Screenshot: Splunk bar chart or table showing failure count per account**
+
+![Splunk Failed Logins Timechart](file:///home/stacy/Cyber Security Portfolio/Screenshots/Splunk/Splunk_failed_logins_timechart.png)
 
 Save as: `Screenshots/Splunk/Splunk_password_spray_by_account.png`
 
@@ -153,6 +161,8 @@ impacket-GetUserSPNs 'cybersec.local/j.smith:Password123!' -dc-ip 192.168.50.5 -
 ```
 
 📸 **Screenshot: Kali showing either the TGS hash OR the clock skew error — both are good for your portfolio**
+
+![Kali Kerberoasting Clock Skew Error](file:///home/stacy/Cyber Security Portfolio/Screenshots/Kali_Linux/Kali_kerberoasting_clock_skew_error.png)
 
 Save as: `Screenshots/Kali_Linux/AD_Attacks/Kali_kerberoasting_live.png`
 
@@ -190,6 +200,8 @@ nmap -sT -p 1-1000 192.168.50.20
 
 📸 **Screenshot: Nmap results showing open ports on Win11**
 
+![Kali Nmap Scan Results](file:///home/stacy/Cyber Security Portfolio/Screenshots/Kali_Linux/Kali_nmap_enum4linux_with_splunk.png)
+
 Save as: `Screenshots/Kali_Linux/AD_Attacks/Kali_nmap_win11_live.png`
 
 ### Step 2: Detect in Splunk
@@ -215,6 +227,8 @@ enum4linux -a 192.168.50.5
 
 📸 **Screenshot: enum4linux output showing domain info, users, shares**
 
+![Kali Enum4linux Enumeration](file:///home/stacy/Cyber Security Portfolio/Screenshots/Kali_Linux/Kali_nmap_enum4linux_with_splunk.png)
+
 Save as: `Screenshots/Kali_Linux/AD_Attacks/Kali_enum4linux_dc01.png`
 
 ### Step 2: Detect in Splunk
@@ -238,6 +252,8 @@ Save as: `Screenshots/Splunk/Splunk_enum4linux_detection.png`
 Go to Splunk → Dashboards → **SOC Analyst Dashboard**
 
 📸 **Screenshot: Full dashboard with all 5 panels showing data from today's attacks**
+
+![Splunk SOC Dashboard with Live Data](file:///home/stacy/Cyber Security Portfolio/Screenshots/Splunk/Splunk_SOC_dashboard_with_data.png)
 
 Save as: `Screenshots/Splunk/Splunk_SOC_dashboard_live.png`
 

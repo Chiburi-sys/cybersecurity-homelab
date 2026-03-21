@@ -14,6 +14,7 @@ This folder simulates a Tier 1 SOC Analyst workday using real alert data from th
 | `ioc_investigation.md` | IOC investigation checklist and workflow |
 | `shift_handoff_example.md` | End-of-shift handoff report |
 | `log_analysis_exercises.md` | 10 interview-style Splunk questions + solutions |
+| `hands_on_lab_walkthrough.md` | Step-by-step guide for live lab practice |
 
 ---
 
