@@ -103,7 +103,7 @@ docker compose ps
 | wazuh.indexer | wazuh/wazuh-indexer:4.14.3 | 9200 |
 | wazuh.dashboard | wazuh/wazuh-dashboard:4.14.3 | 443→5601 |
 
-![Wazuh Docker Deployment Status](file:///home/stacy/Cyber Security Portfolio/Screenshots/Wazuh/Wazuh_docker_deployment.png)
+![Wazuh Docker Deployment Status](../Screenshots/Wazuh/Wazuh_docker_deployment.png)
 
 ---
 
@@ -199,7 +199,7 @@ Power On → systemd starts → Docker daemon starts
 | 3 | **Verify Agent** | Dashboard → Agents → Confirm "stacy-systemproductname" shows Active (green) | ✅ Done |
 | 4 | **Check Alerts** | Dashboard → Security Events → Confirm events flowing (191 captured) | ✅ Done |
 
-![Wazuh Dashboard with Active Agent](file:///home/stacy/Cyber Security Portfolio/Screenshots/Wazuh/Wazuh_dashboard_active_agent.png)
+![Wazuh Dashboard with Active Agent](../Screenshots/Wazuh/Wazuh_dashboard_active_agent.png)
 
 ### 5. Change Default Password
 | 6 | **Enable Dark Mode** | Dashboard → ☰ Menu → Management → Dashboard Settings → Appearance → Dark Mode | ⬜ Pending |
