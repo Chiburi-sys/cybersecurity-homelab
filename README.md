@@ -53,21 +53,22 @@ Welcome to my cybersecurity home lab portfolio. This repository showcases hands-
 
 ```
                     ┌──────────────────────────┐
-                    │    VirtualBox Host        │
+                    │    VirtualBox Host Admin  │
                     │    Garuda Linux (KDE)     │
-                    │    + Docker (Wazuh)       │
+                    │    + Docker (Wazuh Stack) │
                     └────────────┬─────────────┘
                                  │
                       Internal Network: LabNet
                       Subnet: 192.168.50.0/24
                                  │
-     ┌───────────────┬───────────┼───────────┬───────────────┐
-     │               │           │           │               │
-┌────┴─────┐  ┌──────┴────┐ ┌───┴────┐  ┌───┴──────┐
-│ DC01     │  │ Ubuntu    │ │ Win11  │  │ Kali     │
-│ .50.5    │  │ .50.10    │ │ .50.20 │  │ .50.30   │
-│ AD DS    │  │ Splunk    │ │ Sysmon │  │ Attacker │
-└──────────┘  └───────────┘ └────────┘  └──────────┘
+      ┌────────────────┬─────────┴─────────┬────────────────┐
+      │                │                   │                │
+┌─────┴──────┐  ┌──────┴──────┐     ┌──────┴──────┐  ┌──────┴──────┐
+│ DC01       │  │ Ubuntu      │     │ Win11       │  │ Kali        │
+│ .50.5      │  │ .50.10      │     │ .50.20      │  │ .50.30      │
+│ AD DS / DNS│  │ Splunk SIEM │     │ Sysmon +    │  │ Attacker    │
+│ Forwarder  │  │ Indexer     │     │ Forwarder   │  │ Nmap / CME  │
+└────────────┘  └─────────────┘     └─────────────┘  └─────────────┘
 ```
 
 ---
