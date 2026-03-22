@@ -22,10 +22,9 @@ Welcome to my cybersecurity home lab portfolio. This repository showcases hands-
 | Folder | Description |
 |--------|-------------|
 | `Active_Directory/` | AD DS setup, Kerberoasting attack, BloodHound analysis |
-| `Deployment_Guides/` | **Masterclass:** Step-by-step walkthrough of the entire lab build |
+| `Lab_Setup_Manual/` | **Tutorial:** Step-by-step guides for the entire lab build |
 | `Attack_Simulation/` | Nmap, CrackMapExec, password spraying, Kerberoasting |
 | `Incident_Reports/` | SOC-style incident documentation and response playbooks |
-| `Lab_Setup_Manual/` | **Tutorial:** Step-by-step guides for the entire lab build |
 | `Screenshots/` | Visual evidence organized by OS/tool |
 | `Scripts/` | Python and PowerShell tools |
 | `SOC_Analyst/` | Tier 1 SOC simulation — triage, tickets, escalation |
@@ -77,8 +76,10 @@ Welcome to my cybersecurity home lab portfolio. This repository showcases hands-
 
 - [`splunk_setup.md`](Lab_Setup_Manual/splunk_setup.md) — Splunk Linux installation  
 - [`wazuh_setup.md`](Lab_Setup_Manual/wazuh_setup.md) — Wazuh Docker deployment  
-- [`ad_setup_guide.md`](Lab_Setup_Manual/ad_setup_guide.md) — Domain controller setup  
+- [**AD DS Setup Guide**](Lab_Setup_Manual/ad_setup_guide.md) — Domain controller setup  
+- [**DVWA Setup Guide**](Lab_Setup_Manual/dvwa_setup_guide.md) — Web application target lab  
 - [**Lab Architecture Diagram**](Lab_Setup_Manual/00_Lab_Architecture.md) — Full lab topology  
+- [**IP Address Map**](Lab_Setup_Manual/01_IP_Address_Map.md) — Static IP assignments  
 - [`wazuh_detection_engineering.md`](Wazuh_SIEM/wazuh_detection_engineering.md) — Wazuh rules & SOAR logic  
 - [`vulnerability_assessment.md`](Wazuh_SIEM/vulnerability_assessment.md) — Wazuh Vulnerability reporting  
 - [`rootkit_anomaly_detection.md`](Wazuh_SIEM/rootkit_anomaly_detection.md) — Rootkit/Anomaly detection report  
