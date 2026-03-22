@@ -11,6 +11,8 @@ This folder contains SOC-style incident reports and response playbooks created f
 | `001_brute_force_smb.md` | SMB brute force against Win11 | High |
 | `002_ad_password_spray.md` | AD password spray against DC01 | High |
 | `002_wazuh_fim_alert.md` | Wazuh File Integrity Monitoring alert | Medium |
+| `vulnerability_assessment.md` | Wazuh Vulnerability Detector Findings | High |
+| `rootkit_anomaly_detection.md` | Wazuh Rootcheck - Anomaly Investigation | Critical |
 
 ## Response Playbooks
 
