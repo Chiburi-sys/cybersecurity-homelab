@@ -375,7 +375,8 @@ curl -sk -H "Authorization: Bearer $TOKEN" https://localhost:55000/overview/agen
 4. **Change the default password first** — `SecretPassword` is publicly known. See Section 6.
 5. **Optimize for SOC Workflow** — Edit `/usr/share/wazuh-dashboard/config/opensearch_dashboards.yml` to set `opensearch_security.session.ttl: 43200000` (12 hours) to avoid constant timeouts, and `uiSettings.overrides.theme:darkMode: true` to enforce a dark UI globally.
 6. **Deploy SOAR Integrations** — As detailed in `wazuh_soar_architecture.md`, deploy the Python Discord integration in the manager container and configure Active Response to automatically drop attackers' IPs if brute-force thresholds are met.
-7. **This complements your Splunk lab** — Splunk monitors your Windows VMs, Wazuh monitors your real host. Two SIEMs on one resume.
+7. **Proactive Scanning & Anomaly Detection** — See `vulnerability_assessment.md` for CVE reporting and `rootkit_anomaly_detection.md` for how Wazuh detects trojaned system binaries.
+8. **This complements your Splunk lab** — Splunk monitors your Windows VMs, Wazuh monitors your real host. Two SIEMs on one resume.
 
 ---
 *This setup guide is maintained as part of a cybersecurity portfolio. Wazuh deployment running on Garuda Linux (bare metal) with Docker.*
