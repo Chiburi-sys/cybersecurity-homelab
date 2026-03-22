@@ -77,7 +77,7 @@ All VMs are configured with static IPs to ensure consistent log correlation and 
 - Screenshots of IP configs are stored in `Screenshots/`
 ---
 ## 📁 Related Files
-- `vm_ip_map.md` — Static IP assignments  
+- [`01_IP_Address_Map.md`](01_IP_Address_Map.md) — Static IP assignments  
 - `virtualbox_interface.png` — Network adapter settings  
 - `Screenshots/` — OS-specific configuration screenshots
 ---
