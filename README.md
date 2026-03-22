@@ -77,7 +77,7 @@ Welcome to my cybersecurity home lab portfolio. This repository showcases hands-
 - [`splunk_setup.md`](Lab_Setup_Manual/splunk_setup.md) — Splunk Linux installation  
 - [`wazuh_setup.md`](Lab_Setup_Manual/wazuh_setup.md) — Wazuh Docker deployment  
 - [`ad_setup_guide.md`](Lab_Setup_Manual/ad_setup_guide.md) — Domain controller setup  
-- [`network_diagram.md`](Lab_Setup_Manual/network_diagram_updated.md) — Full lab topology  
+- [**Lab Architecture Diagram**](Lab_Setup_Manual/00_Lab_Architecture.md) — Full lab topology  
 - [`wazuh_detection_engineering.md`](Wazuh_SIEM/wazuh_detection_engineering.md) — Wazuh rules & SOAR logic  
 - [`vulnerability_assessment.md`](Wazuh_SIEM/vulnerability_assessment.md) — Wazuh Vulnerability reporting  
 - [`rootkit_anomaly_detection.md`](Wazuh_SIEM/rootkit_anomaly_detection.md) — Rootkit/Anomaly detection report  
