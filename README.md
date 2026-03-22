@@ -22,9 +22,10 @@ Welcome to my cybersecurity home lab portfolio. This repository showcases hands-
 | Folder | Description |
 |--------|-------------|
 | `Active_Directory/` | AD DS setup, Kerberoasting attack, BloodHound analysis |
+| `Deployment_Guides/` | **Masterclass:** Step-by-step walkthrough of the entire lab build |
 | `Attack_Simulation/` | Nmap, CrackMapExec, password spraying, Kerberoasting |
 | `Incident_Reports/` | SOC-style incident documentation and response playbooks |
-| `Lab_Network/` | Network diagram, IP map, topology |
+| `Lab_Setup_Manual/` | **Tutorial:** Step-by-step guides for the entire lab build |
 | `Screenshots/` | Visual evidence organized by OS/tool |
 | `Scripts/` | Python and PowerShell tools |
 | `SOC_Analyst/` | Tier 1 SOC simulation — triage, tickets, escalation |
@@ -73,12 +74,10 @@ Welcome to my cybersecurity home lab portfolio. This repository showcases hands-
 
 ## 📎 Key Documents
 
-- [`network_diagram.md`](Lab_Network/network_diagram.md) — Full lab topology  
-- [`ad_setup_guide.md`](Active_Directory/ad_setup_guide.md) — Domain controller setup  
-- [`kerberoasting.md`](Active_Directory/kerberoasting.md) — Kerberoasting attack & detection  
-- [`ad_attacks.md`](Attack_Simulation/ad_attacks.md) — All AD attack simulations  
-- [`spl_queries.md`](Splunk_SIEM/spl_queries.md) — Splunk detection queries  
-- [`wazuh_setup.md`](Wazuh_SIEM/wazuh_setup.md) — Wazuh Docker deployment guide  
+- [`splunk_setup.md`](Lab_Setup_Manual/splunk_setup.md) — Splunk Linux installation  
+- [`wazuh_setup.md`](Lab_Setup_Manual/wazuh_setup.md) — Wazuh Docker deployment  
+- [`ad_setup_guide.md`](Lab_Setup_Manual/ad_setup_guide.md) — Domain controller setup  
+- [`network_diagram.md`](Lab_Setup_Manual/network_diagram_updated.md) — Full lab topology  
 - [`wazuh_detection_engineering.md`](Wazuh_SIEM/wazuh_detection_engineering.md) — Wazuh rules & SOAR logic  
 - [`vulnerability_assessment.md`](Wazuh_SIEM/vulnerability_assessment.md) — Wazuh Vulnerability reporting  
 - [`rootkit_anomaly_detection.md`](Wazuh_SIEM/rootkit_anomaly_detection.md) — Rootkit/Anomaly detection report  
