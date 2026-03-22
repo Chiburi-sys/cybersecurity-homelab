@@ -15,6 +15,8 @@ This folder simulates a Tier 1 SOC Analyst workday using real alert data from th
 | `shift_handoff_example.md` | End-of-shift handoff report |
 | `log_analysis_exercises.md` | 10 interview-style Splunk questions + solutions |
 | `hands_on_lab_walkthrough.md` | Step-by-step guide for live lab practice |
+| `vulnerability_assessment.md` | **Proactive Analysis:** CVE reporting and risk posture |
+| `rootkit_anomaly_detection.md` | **Advanced Triage:** Forensic investigation of "Trojaned" binaries |
 
 ---
 
