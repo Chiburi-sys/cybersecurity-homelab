@@ -14,6 +14,7 @@ This folder documents the installation, configuration, and practical application
 | `rootkit_anomaly_detection.md` | Forensic investigation of "Trojaned" binary alerts & false positive handling |
 | `vulnerability_assessment.md` | Analyzing agent-based vulnerability scan results and risk posture |
 | `wazuh_soar_architecture.md` | **Implemented** SOAR design for automated Active Response & Discord integration |
+| `walkthrough_anomaly_tuning.md` | **Education:** Step-by-step guide for anomaly investigation & SIEM tuning |
 | `wazuh_screenshot_guide.md` | Scenarios and triggers used to generate visual evidence for the portfolio |
 
 ---
