@@ -11,9 +11,9 @@ This folder documents the installation, configuration, and practical application
 | `wazuh_setup.md` | Step-by-step guide for Docker-based deployment of the Wazuh stack |
 | `wazuh_detection_engineering.md` | Documentation of custom rule creation, decoder logic, and alerting |
 | `wazuh_local_rules.xml` | The actual custom XML rules implemented on the Wazuh Manager |
-| `wazuh_screenshot_guide.md` | Scenarios and triggers used to generate visual evidence for the portfolio |
+| `rootkit_anomaly_detection.md` | Forensic investigation of "Trojaned" binary alerts & false positive handling |
 | `vulnerability_assessment.md` | Analyzing agent-based vulnerability scan results and risk posture |
-| `wazuh_soar_architecture.md` | Conceptual design for automated response and SOAR integration |
+| `wazuh_soar_architecture.md` | **Implemented** SOAR design for automated Active Response & Discord integration |
 
 ---
 
@@ -22,8 +22,9 @@ This folder documents the installation, configuration, and practical application
 - **Endpoint Monitoring** — Deploying Wazuh agents to Windows and Linux hosts for real-time telemetry.
 - **File Integrity Monitoring (FIM)** — Detecting unauthorized changes to critical system files and configurations.
 - **Vulnerability Detection** — Continuous scanning for CVEs and outdated software on managed endpoints.
+- **SOAR & Automation** — Custom Python integration with Discord Webhooks and automated IP blocking via Active Response.
+- **Forensic Investigation** — Using system-native tools (`pacman`, `stat`, `shadow`) to triage and validate security anomalies.
 - **Custom Rule Development** — Writing tailored XML rules to detect specific attack patterns (e.g., brute force, suspicious shells).
-- **Log Management & Visualization** — Using the Wazuh Dashboard (based on Kibana) to visualize security events and trends.
 
 ---
 
