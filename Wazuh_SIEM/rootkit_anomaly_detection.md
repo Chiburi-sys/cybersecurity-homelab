@@ -11,7 +11,7 @@
 
 During a scheduled system scan using the **Wazuh Rootcheck** module, multiple critical security anomalies were detected on the host `stacy-systemproductname`. The SIEM flagged several core system binaries, including `/usr/sbin/passwd`, `/usr/bin/passwd`, and `/sbin/passwd`, as potentially **trojaned**. 
 
-A "trojaned" binary is one that has been modified by an attacker (often part of a rootkit) to hide malicious activity, maintain persistence, or intercept sensitive data (like user passwords). Detecting these anomalies is a high-priority SOC event that requires immediate investigation and forensic analysis.
+A forensic investigation using system-native tools (`pacman`, `stat`) confirmed these alerts as **False Positives (FP)**. To maintain SOC efficiency and reduce alert fatigue, I implemented **SIEM Tuning** to suppress these specific signatures, resulting in a cleaner, higher-fidelity detection environment.
 
 ## 2. Evidence & Detection (Rule 510)
 
@@ -69,6 +69,25 @@ Including False Positive investigations in a SOC portfolio demonstrates:
 2. **OS Mastery:** Proficiency with native Linux utilities (`pacman`, `stat`, `grep`) to perform secondary verification.
 3. **Efficiency:** Quickly triaging and clearing noise allows the SOC to focus on real, substantiated threats.
 
+## 6. SIEM Tuning & Mitigation
+
+To prevent future occurrences of this false positive and ensure that SOC Analysts can focus on real threats, I implemented a custom **Level 0 suppression rule** in the Wazuh Manager.
+
+### 6.1. Custom Suppression Rule (`local_rules.xml`)
+By creating a rule with `level="0"`, we tell the SIEM to process the event but silently discard it, preventing it from appearing on the dashboard.
+
+```xml
+<rule id="100020" level="0">
+  <if_sid>510</if_sid>
+  <match>/usr/bin/passwd|/usr/sbin/passwd|/sbin/passwd|/bin/passwd</match>
+  <description>Ignore false positive Rootcheck alerts for passwd on Arch-based systems.</description>
+  <group>rootcheck,siem_tuning,</group>
+</rule>
+```
+
+### 6.2. Post-Mitigation Verification
+After restarting the Wazuh Manager and re-scanning the host, the alerts were successfully suppressed. This demonstrates a proactive approach to **SIEM Maintenance** and noise reduction.
+
 ---
 
-*This investigation demonstrates the full incident lifecycle: Detection, Forensic Analysis, and Resolution.*
+*This investigation demonstrates the full incident lifecycle: Detection, Forensic Analysis, Resolution, and Tuning.*
