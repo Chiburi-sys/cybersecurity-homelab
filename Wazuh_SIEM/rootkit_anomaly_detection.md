@@ -15,7 +15,7 @@ A forensic investigation using system-native tools (`pacman`, `stat`) confirmed 
 
 ## 2. Evidence & Detection (Rule 510)
 
-![Wazuh Rootcheck Trojaned Binaries Detection](/home/stacy/Cyber Security Portfolio/Screenshots/Wazuh/wazuh_rootkit_detection_passwd.png)
+![Wazuh Rootcheck Trojaned Binaries Detection](../Screenshots/Wazuh/wazuh_rootkit_detection_passwd.png)
 
 ### 2.1. Rule Trigger: 510 - Host-based anomaly detection
 - **Severity Rating:** Level 7 (Critical Anomaly)
@@ -47,7 +47,7 @@ As a SOC Analyst, it is critical not to rely solely on a single tool. Upon recei
 ### 4.1. Verification via Package Manager (`pacman`)
 On Arch-based systems like Garuda, the native package manager can verify the integrity of installed files against the official repository hashes.
 
-![Pacman Integrity Check Proof](/home/stacy/Cyber Security Portfolio/Screenshots/Wazuh/wazuh_pacman_integrity_check.png)
+![Pacman Integrity Check Proof](../Screenshots/Wazuh/wazuh_pacman_integrity_check.png)
 
 ```bash
 sudo pacman -Qk shadow

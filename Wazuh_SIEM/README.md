@@ -8,7 +8,7 @@ This folder documents the installation, configuration, and practical application
 
 | File | Purpose |
 |------|---------|
-| `wazuh_setup.md` | Step-by-step guide for Docker-based deployment of the Wazuh stack |
+| [**Wazuh Setup Guide**](../Lab_Setup_Manual/wazuh_setup.md) | Step-by-step guide for Docker-based deployment of the Wazuh stack |
 | `wazuh_detection_engineering.md` | Documentation of custom rule creation, decoder logic, and alerting |
 | `wazuh_local_rules.xml` | The actual custom XML rules implemented on the Wazuh Manager |
 | `rootkit_anomaly_detection.md` | Forensic investigation of "Trojaned" binary alerts & false positive handling |

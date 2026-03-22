@@ -19,7 +19,7 @@ I engineered a custom SOAR pipeline within Wazuh that accomplishes two things si
 
 ### Architecture Workflow
 
-![Wazuh SSH Brute Force Test](/home/stacy/Cyber Security Portfolio/Screenshots/Wazuh/wazuh_ssh_brute_force_test.png)
+![Wazuh SSH Brute Force Test](../Screenshots/Wazuh/wazuh_ssh_brute_force_test.png)
 
 1. **Detection:** Wazuh Agent monitors `/var/log/auth.log` (or `systemd` journal) for failed SSH logins.
 2. **Alert Generation:** If `Rule 5712` (SSHD Brute Force) trips (e.g., 6 failed attempts in 120s), the Wazuh Manager generates a Level 10 alert.

@@ -70,7 +70,7 @@ docker exec single-node-wazuh.manager-1 /var/ossec/bin/wazuh-control restart
 ## 📸 4. Incident History & Proof
 Below is the complete terminal history showing the timeline analysis, package integrity verification, and the final SIEM tuning deployment.
 
-![Wazuh Incident Investigation & Tuning History](/home/stacy/Cyber Security Portfolio/Screenshots/Wazuh/wazuh_incident_investigation_history.png)
+![Wazuh Incident Investigation & Tuning History](../Screenshots/Wazuh/wazuh_incident_investigation_history.png)
 
 ---
 
