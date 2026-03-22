@@ -82,6 +82,7 @@ Welcome to my cybersecurity home lab portfolio. This repository showcases hands-
 - [`wazuh_detection_engineering.md`](Wazuh_SIEM/wazuh_detection_engineering.md) — Wazuh rules & SOAR logic  
 - [`vulnerability_assessment.md`](Wazuh_SIEM/vulnerability_assessment.md) — Wazuh Vulnerability reporting  
 - [`rootkit_anomaly_detection.md`](Wazuh_SIEM/rootkit_anomaly_detection.md) — Rootkit/Anomaly detection report  
+- [`walkthrough_anomaly_tuning.md`](Wazuh_SIEM/walkthrough_anomaly_tuning.md) — Educational guide: SIEM Tuning & Forensic Triage  
 - [`001_brute_force_smb.md`](Incident_Reports/001_brute_force_smb.md) — SMB brute force incident  
 - [`002_ad_password_spray.md`](Incident_Reports/002_ad_password_spray.md) — AD password spray incident  
 - [`002_wazuh_fim_alert.md`](Incident_Reports/002_wazuh_fim_alert.md) — Wazuh FIM alert incident  
