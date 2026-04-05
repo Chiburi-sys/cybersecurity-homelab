@@ -36,8 +36,8 @@ To enhance remote incident response capabilities, I deployed a fully persistent 
 ### Implementation Details
 
 * **The API Gateway:** Created a discrete Application within the Discord Developer portal with Privileged Gateway Intents (Message Content) to securely read SOC commands from authorized channels.
-* **The Python Daemon:** Engineered `discord_bot.py`, running in an isolated python virtual environment (`venv`) to securely map Discord commands to local system/docker routines.
-* **Service Persistence:** Deployed the bot as a `systemd` daemon (`discord-bot.service`) utilizing `Restart=always` to ensure complete 24/7 endpoint availability.
+* **The Python daemon:** Implemented a Discord.py bot in a dedicated virtual environment to map SOC channel commands to local system and Docker health checks.
+* **Service persistence:** Registered the bot with **systemd** (`Restart=always`) so it survives reboots and stays available for remote operators.
 
 **Operational Commands:**
 

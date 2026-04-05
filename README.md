@@ -26,7 +26,6 @@ Welcome to my cybersecurity home lab portfolio. This repository showcases hands-
 | `Attack_Simulation/` | Nmap, CrackMapExec, password spraying, Kerberoasting |
 | `Incident_Reports/` | SOC-style incident documentation and response playbooks |
 | `Screenshots/` | Visual evidence organized by OS/tool |
-| `Scripts/` | Python lab utilities (SIEM webhook helpers live under each SIEM folder) |
 | `SOC_Analyst/` | Tier 1 SOC simulation — triage, tickets, escalation |
 | `Splunk_SIEM/` | Splunk Enterprise setup, SPL queries, and SOC dashboards |
 | `Wazuh_SIEM/` | Wazuh Manager (Docker) setup, custom XML rules, SOAR automation, and Rootkit detection |
