@@ -1,0 +1,13 @@
+[Unit]
+Description=Homelab Discord Command Bot
+After=network-online.target wazuh-agent.service
+
+[Service]
+User=stacy
+WorkingDirectory=/home/stacy/Cyber Security Portfolio/Scripts
+ExecStart="/home/stacy/Cyber Security Portfolio/Scripts/discord_venv/bin/python3" "/home/stacy/Cyber Security Portfolio/Scripts/discord_bot.py"
+Restart=always
+RestartSec=10
+
+[Install]
+WantedBy=multi-user.target

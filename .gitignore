@@ -1,0 +1,20 @@
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor files
+*.swp
+*.swo
+*~
+.vscode/
+.idea/
+
+# Gemini/AI artifacts
+.gemini/
+
+# Personal Study
+Personal_Study/
+
+# Local Python environments (not part of portfolio source)
+Scripts/discord_venv/
