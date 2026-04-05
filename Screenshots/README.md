@@ -8,9 +8,10 @@
 
 ## Kali Linux Screenshots
 
+Files live under `Kali_Linux/` (general connectivity) and `Kali_Linux/AD_Attacks/` (CrackMapExec, Kerberoasting, Impacket, etc.).
+
 - `Kali_pinging_Windows.png` — Verifying internal network connectivity  
 - `Updating_Kali.png` — Preparing Kali for attack simulation
-- `Kali_pinging_Windows.png` — Verifying connectivity to Windows 11
 
 ## Ubuntu Server Screenshots
 
@@ -21,7 +22,8 @@
 ## Structure
 
 - GitHub/ — Screenshots showing the repository structure and portfolio
-- Kali_Linux/ — Offensive security tasks and terminal outputs
+- Attack_Simulations/ — Placeholder for reverse-shell / malware-lab captures (see `Attack_Simulation/` docs)
+- Kali_Linux/ — Offensive security tasks and terminal outputs (`AD_Attacks/` for domain attacks)
 - Splunk/ — Splunk SIEM queries, dashboards, and alerts
 - Ubuntu_Server/ — Server configuration and Splunk installation steps
 - Wazuh/ — Wazuh SIEM dashboard and docker deployment
