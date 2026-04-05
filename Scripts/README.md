@@ -9,6 +9,7 @@ Python and PowerShell tools for automating SOC analysis tasks.
 | Script | Language | Purpose |
 |--------|----------|---------|
 | `failed_login_parser.py` | Python 3 | Parses Splunk CSV exports to detect brute force and password spray patterns |
+| `discord_bot.py` | Python 3 | SOC command bot; requires `DISCORD_BOT_TOKEN` (copy `discord-bot.env.example` → `discord-bot.env`, or export in your shell) |
 
 ## Usage
 
