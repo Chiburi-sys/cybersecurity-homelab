@@ -80,9 +80,9 @@ crackmapexec smb 192.168.50.5 -u 's.admin' -p 'Password123!' -d cybersec.local
 
 📸 **Screenshot: Kali terminal showing all 5 CrackMapExec results (1 green SUCCESS, 4 red FAILED)**
 
-![Kali Password Spray Success](../Screenshots/Kali_Linux/AD_Attacks/Kali_password_spray_AD_success.png)
+![Kali Password Spray — CrackMapExec](../Screenshots/Kali_Linux/AD_Attacks/Kali_password_spray_crackmapexec.png)
 
-Save as: `Screenshots/Kali_Linux/AD_Attacks/Kali_password_spray_live.png`
+Save as (if you recapture): `Screenshots/Kali_Linux/AD_Attacks/Kali_password_spray_crackmapexec.png`
 
 ---
 
@@ -162,7 +162,7 @@ impacket-GetUserSPNs 'cybersec.local/j.smith:Password123!' -dc-ip 192.168.50.5 -
 
 📸 **Screenshot: Kali showing either the TGS hash OR the clock skew error — both are good for your portfolio**
 
-![Kali Kerberoasting Clock Skew Error](../Screenshots/Kali_Linux/Kali_kerberoasting_clock_skew_error.png)
+![Kali Kerberoasting Clock Skew Error](../Screenshots/Kali_Linux/AD_Attacks/Kali_kerberoasting_clock_skew_error.png)
 
 Save as: `Screenshots/Kali_Linux/AD_Attacks/Kali_kerberoasting_live.png`
 

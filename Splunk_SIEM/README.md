@@ -9,6 +9,7 @@ This folder documents the installation, configuration, and use of Splunk Enterpr
 - [`sysmon_config.md`](sysmon_config.md) — Sysmon installation and XML configuration
 - [`spl_queries.md`](spl_queries.md) — Splunk detection queries and threat hunting
 - [`alert_configuration.md`](alert_configuration.md) — Configuring real-time alerts in Splunk
+- [`custom-discord.py`](custom-discord.py) — Example Discord webhook notifier for Splunk alert actions (reference / adapt for your environment)
 - [`../Screenshots/Splunk/`](../Screenshots/Splunk/) — Dashboards, alerts, and search screenshots
 
 ## Goal

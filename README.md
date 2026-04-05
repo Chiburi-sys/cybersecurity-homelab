@@ -26,7 +26,7 @@ Welcome to my cybersecurity home lab portfolio. This repository showcases hands-
 | `Attack_Simulation/` | Nmap, CrackMapExec, password spraying, Kerberoasting |
 | `Incident_Reports/` | SOC-style incident documentation and response playbooks |
 | `Screenshots/` | Visual evidence organized by OS/tool |
-| `Scripts/` | Python and PowerShell tools |
+| `Scripts/` | Python lab utilities (SIEM webhook helpers live under each SIEM folder) |
 | `SOC_Analyst/` | Tier 1 SOC simulation — triage, tickets, escalation |
 | `Splunk_SIEM/` | Splunk Enterprise setup, SPL queries, and SOC dashboards |
 | `Wazuh_SIEM/` | Wazuh Manager (Docker) setup, custom XML rules, SOAR automation, and Rootkit detection |
@@ -89,7 +89,8 @@ Welcome to my cybersecurity home lab portfolio. This repository showcases hands-
 - [`002_wazuh_fim_alert.md`](Incident_Reports/002_wazuh_fim_alert.md) — Wazuh FIM alert incident  
 - [`alert_triage_log.md`](SOC_Analyst/alert_triage_log.md) — Tier 1 shift: 10 alerts with TP/FP/benign verdicts and SPL  
 - [`hands_on_lab_walkthrough.md`](SOC_Analyst/hands_on_lab_walkthrough.md) — Step-by-step SOC lab guide  
-- [`resume_cover_letter_blurbs.md`](Resume/resume_cover_letter_blurbs.md) — Professional resume and cover letter summaries  
+- [`Stacy_Bostick_Resume.md`](Resume/Stacy_Bostick_Resume.md) — Resume (Markdown)  
+- [`resume_cover_letter_blurbs.md`](Resume/resume_cover_letter_blurbs.md) — Application blurbs and talking points  
 
 ---
 

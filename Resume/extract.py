@@ -1,3 +1,8 @@
+"""
+Extract plain text from local Word (.docx) files for quick review in the terminal.
+Expects these files next to this script (not committed to the repo): e.g.
+`Cyber Security Resume.docx`, `Cover Letter.docx`. Edit paths below if yours differ.
+"""
 import zipfile
 import xml.etree.ElementTree as ET
 
