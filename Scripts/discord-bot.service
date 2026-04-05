@@ -5,6 +5,8 @@ After=network-online.target wazuh-agent.service
 [Service]
 User=stacy
 WorkingDirectory=/home/stacy/Cyber Security Portfolio/Scripts
+# Create discord-bot.env (gitignored) from discord-bot.env.example
+EnvironmentFile=-/home/stacy/Cyber Security Portfolio/Scripts/discord-bot.env
 ExecStart="/home/stacy/Cyber Security Portfolio/Scripts/discord_venv/bin/python3" "/home/stacy/Cyber Security Portfolio/Scripts/discord_bot.py"
 Restart=always
 RestartSec=10

@@ -3,11 +3,13 @@ import subprocess
 import os
 import json
 
+# Token must never be committed. Set DISCORD_BOT_TOKEN (see discord-bot.env.example).
 TOKEN = os.environ.get("DISCORD_BOT_TOKEN", "").strip()
 if not TOKEN:
     raise SystemExit(
         "Set DISCORD_BOT_TOKEN in the environment (e.g. Scripts/discord-bot.env for systemd)."
     )
+
 intents = discord.Intents.default()
 intents.message_content = True
 

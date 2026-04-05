@@ -18,3 +18,6 @@ Personal_Study/
 
 # Local Python environments (not part of portfolio source)
 Scripts/discord_venv/
+
+# Discord bot secret (copy discord-bot.env.example → discord-bot.env)
+Scripts/discord-bot.env
