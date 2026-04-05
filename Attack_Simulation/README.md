@@ -17,6 +17,14 @@ This folder contains offensive security exercises performed in a controlled home
 | `malware_execution.md` | Payload execution & LOLBins | T1059 |
 | `sql_injection_dvwa.md` | SQL injection via DVWA | T1190 |
 
+### Additional write-ups
+
+| File | Topic |
+|------|--------|
+| `vulnerability_assessment.md` | Nmap-based vulnerability assessment across lab hosts |
+| `reverse_shell_sim.md` | Reverse shell simulation notes |
+| `malware_behavior_lab.md` | Malware behavior / telemetry lab notes |
+
 ---
 
 ## Goal

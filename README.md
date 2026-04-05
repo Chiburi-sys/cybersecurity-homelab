@@ -95,7 +95,7 @@ Welcome to my cybersecurity home lab portfolio. This repository showcases hands-
 
 ## 📬 Contact
 
-Feel free to connect with me on [LinkedIn](https://www.linkedin.com/) or explore more projects on my [GitHub profile](https://github.com/).
+Connect on LinkedIn (see resume for profile link) or browse this project on [GitHub](https://github.com/Chiburi-sys/cybersecurity-homelab).
 
 ---
 
