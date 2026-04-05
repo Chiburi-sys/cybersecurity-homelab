@@ -16,6 +16,9 @@ desktop.ini
 # Personal Study
 Personal_Study/
 
+# Fiverr gig materials (separate from job portfolio)
+Fiverr_Portfolio/
+
 # Local Python environments (not part of portfolio source)
 Scripts/discord_venv/
 

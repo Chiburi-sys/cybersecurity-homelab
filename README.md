@@ -31,7 +31,7 @@ Welcome to my cybersecurity home lab portfolio. This repository showcases hands-
 | `Splunk_SIEM/` | Splunk Enterprise setup, SPL queries, and SOC dashboards |
 | `Wazuh_SIEM/` | Wazuh Manager (Docker) setup, custom XML rules, SOAR automation, and Rootkit detection |
 | `Web_App_Pentesting/` | DVWA, Juice Shop findings |
-| `Resume/` | Cybersecurity certificate |
+| `Resume/` | Resume, cover letters, and application blurbs |
 
 ---
 
@@ -87,6 +87,7 @@ Welcome to my cybersecurity home lab portfolio. This repository showcases hands-
 - [`001_brute_force_smb.md`](Incident_Reports/001_brute_force_smb.md) — SMB brute force incident  
 - [`002_ad_password_spray.md`](Incident_Reports/002_ad_password_spray.md) — AD password spray incident  
 - [`002_wazuh_fim_alert.md`](Incident_Reports/002_wazuh_fim_alert.md) — Wazuh FIM alert incident  
+- [`alert_triage_log.md`](SOC_Analyst/alert_triage_log.md) — Tier 1 shift: 10 alerts with TP/FP/benign verdicts and SPL  
 - [`hands_on_lab_walkthrough.md`](SOC_Analyst/hands_on_lab_walkthrough.md) — Step-by-step SOC lab guide  
 - [`resume_cover_letter_blurbs.md`](Resume/resume_cover_letter_blurbs.md) — Professional resume and cover letter summaries  
 
