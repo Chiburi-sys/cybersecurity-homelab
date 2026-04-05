@@ -1,6 +1,6 @@
 # Scripts
 
-Python and PowerShell tools for automating SOC analysis tasks.
+Python tools for automating SOC analysis tasks (PowerShell examples appear in lab and attack write-ups, not as `.ps1` scripts in this folder).
 
 ---
 
